@@ -1,0 +1,38 @@
+body
+{
+    background-color: black;
+    background-image: url("/wallpapersden.com_scary-joker-minimal-4k_3840x2061.jpg");
+    background-size: cover;
+}
+
+.wrapper
+{
+    color: blue;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-decoration: underline blue;
+}
+
+.about 
+{
+    color: yellow;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: optional;
+    font-size: medium;
+}
+.about p
+{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.about a
+{
+    text-decoration: none;
+}
+footer{
+    color: yellow;
+}
