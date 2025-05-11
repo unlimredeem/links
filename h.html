@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGN UP</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    .password-wrapper {
+      position: relative;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="box1">
+      <form action="home.html">
+        <div class="name">
+          <input type="text" id="name" placeholder="*ENTER YOUR FULL NAME*" required>
+        </div>
+        <div class="email">
+          <input type="email" id="email" placeholder="*ENTER EMAIL*" required>
+        </div>
+        <div class="password password-wrapper">
+          <input type="password" id="password" placeholder="*ENTER PASSWORD*" required>
+          <button type="button" class="toggle-password" onclick="togglePassword('password')">👁️</button>
+        </div>
+        <div class="conpass password-wrapper">
+          <input type="password" id="conpass" placeholder="*CONFIRM PASSWORD*" required>
+          <button type="button" class="toggle-password" onclick="togglePassword('conpass')">👁️</button>
+        </div>
+        <div class="sign">
+          <button id="sign" type="submit">SIGN UP</button>
+        </div>
+        <div class="login">
+          <a href="login.html">ALREADY HAVE ACCOUNT? SIGN IN NOW!</a>
+        </div>
+      </form>
+    </div>
+  </header> -->
+
+  <script>
+    function togglePassword(id) {
+      const field = document.getElementById(id);
+      field.type = field.type === "password" ? "text" : "password";
+    }
+
+    document.getElementById("sign").addEventListener("click", function (event) {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const conpass = document.getElementById("conpass").value;
+
+      if (!name || !email || !password || !conpass) {
+        alert("Please fill out all fields.");
+        event.preventDefault();
+        return;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert("Enter a valid email address.");
+        event.preventDefault();
+        return;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters.");
+        event.preventDefault();
+        return;
+      }
+
+      if (password !== conpass) {
+        alert("Passwords do not match.");
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

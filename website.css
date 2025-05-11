@@ -1,0 +1,146 @@
+*
+{
+    /* background-color: black; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbrand h1
+{
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbrand h1:hover
+{
+  color: blue;
+}
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.wrapper{
+    padding: 0px 10px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.navlist{
+    list-style: none;
+    text-align: center;
+}
+
+.navlist li a{
+    text-decoration: solid;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.navlist li a{
+    border: 1px solid transparent;
+}
+
+.navlist li a:hover{
+    color: blue;
+}
+
+
+.navlist li{
+    display: inline-block;
+    margin: 0px 10px;
+
+}
+
+#video{
+    text-align: left;
+    text-decoration: none;
+    margin-top: 100px;
+    padding: 12px;
+    border-radius: 20px;
+    text-decoration-line: none;
+    color: yellow;
+}
+#video a{
+    text-decoration: none;
+    color: blue;
+}
+
+.title h1
+{
+    text-align: center;
+    color: blue;
+    font-size: xx-large;
+    font-style: normal;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.links h3
+{
+    color: yellow;
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.links a
+{
+    color: blue;
+    margin-left: 10px;
+}
+
+.app h1
+{
+    color: rgb(80, 175, 175);
+    text-decoration: underline ;
+    text-align: center;
+    
+}
+
+.testing{
+    color: yellow;
+    margin-left: 10px;
+}
+
+.testing a 
+{
+    color: blue;
+    
+}
+
+.upcoming p
+{
+    color: yellow;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+.upcoming
+
+{
+    color: blue;
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.upcoming a
+{
+    color: blue;
+    margin-left: 10px;
+    text-align: center;
+}
+.upcoming
+{
+    text-align: center;
+}

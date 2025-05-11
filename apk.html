@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOWNLOAD APPS</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="navbrand">
+                <h1>UNLIM LINKS</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navlist">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="website.html">Website links </a></li>
+                    <li><a href="apk.html">Download Apps</a></li>
+                    <li><a href="contactus.html">Contactus</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="index.html">LogOut</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br><br>
+        <div class="title">
+            <h1>
+                APPS LINKS
+            </h1>
+        </div>
+        </header>
+        <br><br><br><br><br>
+        <main>
+            <div class="app">
+          <li><h1> &rArr; SOCIAL MEDIA/ENTERTAINMENT </h1></li>  
+          
+            <br><br><br><br>
+                <div class="testing">
+                    &rAarr; Click on Download("INSTAGRAM") ---- <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_IN" target="_blank">DOWNLOAD !! </a>
+                    <br>
+                    &rAarr; Click on Download("INSTAGRAM APK") ---- <a href="https://apkpure.net/instagram-android/com.instagram.android/download" target="_blank">DOWNLOAD APK !! </a>
+                    <BR><br><br>
+                        &rAarr;Click on download("FACEBOOK") ---- <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en_IN" target="_blank">DOWNLOAD !!</a>
+                        <br>
+                        &rAarr;Click on download("FACEBOOK APK") ---- <a href="https://apkpure.net/facebook/com.facebook.katana/download" target="_blank">DOWNLOAD APK !!</a>
+                        <br><br><BR>
+                            &rAarr;Click on download("X") ---- <a href="https://play.google.com/store/apps/details?id=com.twitter.android&hl=en_IN" target="_blank">DOWNLOAD !!</a>
+                            <BR>
+                                &rAarr;Click on download("X APK") ---- <a href="pkpure.net/x/com.twitter.android/download" target="_blank">DOWNLOAD APK !!</a>
+
+                </div>
+                <br><br><br><br>
+                <li><h1>&rArr;MUSIC</h1></li>
+                <br><br><br><br>
+                <div class="testing">
+                    &rAarr;Click on download("SPOTIFY") ---- <a href="https://play.google.com/store/search?q=spotify&c=apps&hl=en_IN" target="_blank">DOWNLOAD !!</a>
+                    <br>
+                    &rAarr;Click on download("SPOTIFY APK") ---- <a href="https://apkpure.net/spotify-music-and-podcasts-for-android/com.spotify.music/download" target="_blank">DOWNLOAD APK !!</a>
+                    <br><br><br>
+                    &rAarr;Click on download("JIO SAAVN") ---- <a href="https://play.google.com/store/apps/details?id=com.jio.media.jiobeats&hl=en_IN" target="_blank">DOWNLOAD !!</a>
+                    <br>
+                    &rAarr;Click on download("JIO SAAVN APK") ---- <a href="https://apkpure.net/jiosaavn-music-radio/com.jio.media.jiobeats/download" target="_blank">DOWNLOAD APK !!</a>
+                    <br><br><br>
+                    &rAarr;Click on download("GAANA") ---- <a href="https://play.google.com/store/apps/details?id=com.gaana&hl=en_IN" target="_blank">DOWNLOAD !!</a>
+                    <br>
+                    &rAarr;Click on download("GAANA APK") ---- <a href="https://apkpure.net/gaana-music-app-mp3-songs/com.gaana/download" target="_blank">DOWNLOAD APK !!</a>
+                    <br><br><br>
+                </div>
+            
+         
+            </div>
+        </main>
+        <script>
+// Scroll to Top Button (if needed)
+const scrollBtn = document.createElement('button');
+scrollBtn.innerText = '⬆️';
+scrollBtn.style.position = 'fixed';
+scrollBtn.style.bottom = '20px';
+scrollBtn.style.right = '20px';
+scrollBtn.style.display = 'none';
+scrollBtn.style.padding = '10px';
+scrollBtn.style.borderRadius = '50%';
+scrollBtn.style.fontSize = '20px';
+scrollBtn.style.cursor = 'pointer';
+document.body.appendChild(scrollBtn);
+
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Typewriter effect for headings (if <h1> exists)
+document.addEventListener("DOMContentLoaded", () => {
+  const h1 = document.querySelector("h1");
+  if (h1) {
+    const text = h1.innerText;
+    h1.innerText = "";
+    let i = 0;
+    const interval = setInterval(() => {
+      h1.innerText += text.charAt(i);
+      i++;
+      if (i > text.length) clearInterval(interval);
+    }, 100);
+  }
+});
+</script>
+
+</body>
+</html>

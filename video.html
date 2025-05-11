@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO LINKS</title>
+    <link rel= "stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="navbrand">
+                <h1>UNLIM LINKS</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navlist">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="website.html">Website links </a></li>
+                    <li><a href="apk.html">Download Apps</a></li>
+                    <li><a href="contactus.html">Contactus</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="index.html">LogOut</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br><br>
+        <div class="title">
+            <h1>
+                 VIDEO LINKS
+            </h1>
+        </div>
+        
+    </header>
+    <main>
+         <div id="video">
+        Download Video ----  <a href="/webpage/projectvideoibm - Made with Clipchamp.mp4" Download>Download video</a>
+          <br><br>
+         Watch Online ---- <a href="/webpage/projectvideoibm - Made with Clipchamp.mp4">Watch online</a>
+         
+      </div>
+    </main>
+   
+    <script>
+// Scroll to Top Button (if needed)
+const scrollBtn = document.createElement('button');
+scrollBtn.innerText = '⬆️';
+scrollBtn.style.position = 'fixed';
+scrollBtn.style.bottom = '20px';
+scrollBtn.style.right = '20px';
+scrollBtn.style.display = 'none';
+scrollBtn.style.padding = '10px';
+scrollBtn.style.borderRadius = '50%';
+scrollBtn.style.fontSize = '20px';
+scrollBtn.style.cursor = 'pointer';
+document.body.appendChild(scrollBtn);
+
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Typewriter effect for headings (if <h1> exists)
+document.addEventListener("DOMContentLoaded", () => {
+  const h1 = document.querySelector("h1");
+  if (h1) {
+    const text = h1.innerText;
+    h1.innerText = "";
+    let i = 0;
+    const interval = setInterval(() => {
+      h1.innerText += text.charAt(i);
+      i++;
+      if (i > text.length) clearInterval(interval);
+    }, 100);
+  }
+});
+</script>
+
+</body>
+</html>

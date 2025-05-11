@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE LINKS</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="navbrand">
+                <h1>UNLIM LINKS</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navlist">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="video.html">Video </a></li>
+                    <li><a href="website.html">Website links </a></li>
+                    <li><a href="apk.html">Download Apps</a></li>
+                    <li><a href="contactus.html">Contactus</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="index.html">LogOut</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br><br>
+        <div class="title">
+            <h1>
+              WEBSITES LINKS
+            </h1>
+          </div>
+    </header>
+    <br><br><br><br><br>
+    <main>
+
+        <br>
+        <div class="links">
+            <h3>&rArr; SOCIAL MEDIA/ENTERTAINMENT</h3>
+            <Br><br><br>
+            <a href="https://www.youtube.com/" target="_blank">&rArr; CLICK HERE TO GO TO "YOUTUBE"</a>
+            <br><br>
+            <a href="https://www.instagram.com/" target="_blank">&rArr; CLICK HERE TO GO TO "INSTAGRAM"</a>
+            <br><br>
+            <a href="https://www.facebook.com/" target="_blank">&rArr; CLICK HERE TO GO TO "FACEBOOK" </a>
+            <br><br>
+            <a href="https://x.com/?lang=en" target="_blank">&rArr; CLICK HERE TO GO TO "X"</a>
+            <br><br><br>
+            <h3>&rArr; EDUCATION </h3>
+            <br><br>
+            <a href="https://byjus.com/" target="_blank">&rArr;CLICK HERE TO GO TO "BYJU`S"</a>
+            <br><br>
+            <a href="https://www.codecademy.com/" target="_blank">&rArr; CLICK HERE TO GO TO "CODECADEMY"</a>
+            <br><br>
+            <a href="https://www.udemy.com/?srsltid=AfmBOoqGZY_yPYW1VUn4BbqckhSMPpOLiCwP5Z6I4zm1RczCKwqLiC2s" target="_blank">&rArr; CLICK HERE TO GO TO "UDEMY"</a>
+            <BR><br><br>
+                <h3>&rArr; ONLINE GAMING</h3>
+                <br><br>
+                <a href="https://www.crazygames.com/" target="_blank">&rArr; CLICK HERE TO GO TO "CRAZY GAMES"</a>
+                <br><br>
+                <a href="https://playhop.com/tag/for_pc_97" target="_blank">&rArr; CLICK HERE TO GO TO "PLAY HOP" </a>
+                <br><Br><br>
+                    <h3>&rArr; CLOUD GAMING</h3>
+                    <br><br>
+                    <a href="https://www.raccoongame.com/#/contant/cloudgame" target="_blank">&rArr; CLICK HERE TO GO TO "RACOON GAMES(CLOUD)"</a>
+
+            <br><br>
+
+        </div>
+        <script>
+// Scroll to Top Button (if needed)
+const scrollBtn = document.createElement('button');
+scrollBtn.innerText = '⬆️';
+scrollBtn.style.position = 'fixed';
+scrollBtn.style.bottom = '20px';
+scrollBtn.style.right = '20px';
+scrollBtn.style.display = 'none';
+scrollBtn.style.padding = '10px';
+scrollBtn.style.borderRadius = '50%';
+scrollBtn.style.fontSize = '20px';
+scrollBtn.style.cursor = 'pointer';
+document.body.appendChild(scrollBtn);
+
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Typewriter effect for headings (if <h1> exists)
+document.addEventListener("DOMContentLoaded", () => {
+  const h1 = document.querySelector("h1");
+  if (h1) {
+    const text = h1.innerText;
+    h1.innerText = "";
+    let i = 0;
+    const interval = setInterval(() => {
+      h1.innerText += text.charAt(i);
+      i++;
+      if (i > text.length) clearInterval(interval);
+    }, 100);
+  }
+});
+</script>
+
+</body>
+</html>

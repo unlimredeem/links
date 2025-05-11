@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN IN UNLIM LINKS</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    .password-wrapper {
+      position: relative;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <form action="home.html">
+      <div class="email">
+        <input type="email" id="email" placeholder="*ENTER EMAIL*" required>
+      </div>
+      <div class="password password-wrapper">
+        <input type="password" id="password" placeholder="*ENTER PASSWORD*" required>
+        <button type="button" class="toggle-password" onclick="togglePassword('password')">👁️</button>
+      </div>
+
+      <div class="sign">
+        <button id="sign" type="submit">SIGN IN</button>
+      </div>
+      <!-- <div class="redirect">
+        <a href="index.html">NO ACCOUNT? SIGN UP!</a>
+      </div> -->
+            <div class="forgetpass">
+        <a href="forget.html">CONTACT FOR USERNAME AND PASSWORD!!</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword(id) {
+      const field = document.getElementById(id);
+      field.type = field.type === "password" ? "text" : "password";
+    }
+
+    document.getElementById("sign").addEventListener("click", function (event) {
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (!email || !password) {
+        alert("Please fill out all fields.");
+        event.preventDefault();
+        return;
+      }
+
+      // const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      // if (!emailPattern.test(email)) {
+      //   alert("Please enter a valid email address.");
+      //   event.preventDefault();
+      //   return;
+      // }
+
+      if (email !== "dark@7gmail.com" || password !== "1234567") {
+        alert("correct email or password.");
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

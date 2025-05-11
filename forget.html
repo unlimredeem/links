@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+          <h1>
+            CONTACT US
+          </h1>
+        </div>
+    </header>
+    <br><br>
+    <main>
+        <div class="about">
+            <p>
+                THIS IS NON-PROFIT WEBSITE, UNLIM LINKS.
+                HERE YOU CAN GET WEBSITES LINKS, APK DOWNLOAD LINKS AND MOVIES.
+
+            </p>
+            <br><br><br>
+            <a href="index.html">&rarr; CLICK HERE TO BACK TO SIGN IN.</a>
+
+        </div>
+        <div class="help">
+            <h4>
+                IF YOU ARE IN TROUBLE PLEASE CONTACT ON GIVEN NUMBER OR EMAIL..
+            </h4>
+        </div>
+    </main>
+    <BR><br><br><BR><BR><BR><BR>
+        <div class="forget">
+            <p>
+                CONTACT FOR USERNAME AND PASSWORD..SCROLL DOWN..
+            </p>
+        </div>
+        <footer>
+            EMAIL- unlimlinks@gmail.com
+            <br><br>
+            CUSTOMER SERVICE NUMBER- +91 96743XXXXX
+        </footer>
+        <script>
+// Scroll to Top Button (if needed)
+const scrollBtn = document.createElement('button');
+scrollBtn.innerText = '⬆️';
+scrollBtn.style.position = 'fixed';
+scrollBtn.style.bottom = '20px';
+scrollBtn.style.right = '20px';
+scrollBtn.style.display = 'none';
+scrollBtn.style.padding = '10px';
+scrollBtn.style.borderRadius = '50%';
+scrollBtn.style.fontSize = '20px';
+scrollBtn.style.cursor = 'pointer';
+document.body.appendChild(scrollBtn);
+
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Typewriter effect for headings (if <h1> exists)
+document.addEventListener("DOMContentLoaded", () => {
+  const h1 = document.querySelector("h1");
+  if (h1) {
+    const text = h1.innerText;
+    h1.innerText = "";
+    let i = 0;
+    const interval = setInterval(() => {
+      h1.innerText += text.charAt(i);
+      i++;
+      if (i > text.length) clearInterval(interval);
+    }, 100);
+  }
+});
+</script>
+
+</body>
+</html>
